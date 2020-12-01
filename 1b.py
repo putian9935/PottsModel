@@ -19,5 +19,5 @@ for T in [.5,1.,2]:
         ms.append(tmp[0] / N**2)
 
     plt.plot(hs, ms, label=r'$T=%.1f$'%T) 
-
+plt.legend()
 plt.savefig('1b.png')

@@ -11,7 +11,7 @@ def MCMC(beta, h, q, N, func_array, args):
     horz = sigma == sigma[:, list(range(1, N)) + [0]]
     vert = sigma == sigma[list(range(1, N)) + [0], :]
     H = -np.sum(horz) -np.sum(vert) - h * np.sum(sigma)
-
+    
     # Initialize the parameters 
     mc_iter, burn_in = args
     num_array = len(func_array)
